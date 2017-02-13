@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
   </head>
 
   <body>
@@ -16,6 +17,65 @@
 
     <main>
       <p id="description">If you are a developer, we'd appreciate if you could fill out this survey!</p>
+
+      <form id="survey-form" action="#" method="post">
+        <label id="name-label" for="name">* Name: </label>
+        <input type="text" id="name" placeholder="Please enter your name." required>
+
+        <label id="email-label" for="email">* Email: </label>
+        <input type="email" id="email" placeholder="Please enter a valid email address." required>
+
+        <label id="age-labels" for="Age">* Age: </label>
+        <input type="number" id="age" min="14" max="110" placeholder="Acceptable age range is 14 to 110." required>
+
+        <label for="background">Background Experience: </label>
+        <label><input type="radio" name="background" checked="checked"> Hobbyist</label>
+        <label><input type="radio" name="background"> Professional</label>
+
+        <label id="years-of-experience">Years of Experience: </label>
+        <label><input type="radio" name="exp" checked="checked"> Less than 1 year</label>
+        <label><input type="radio" name="exp"> 1-2 years</label>
+        <label><input type="radio" name="exp"> 2-5 years</label>
+        <label><input type="radio" name="exp"> 6-10 years</label>
+        <label><input type="radio" name="exp"> More than 11 years</label>
+
+        <label id="dropdown" for="dropdown">Highest Level of Education: </label>
+        <select name="dropdown">
+          <option value="Self taught">Self taught</option>
+          <option value="Certificate">Certificate</option>
+          <option value="Bootcamp">Bootcamp</option>
+          <option value="Bachelors or Masters in other field">Bachelors or Masters in other field</option>\
+          <option value="Bachelors or Masters in Computer Science, or similiar field">Bachelors or Masters in Computer Science</option>
+          <option value="Ph.D. in other field">Ph.D. in Computer Science or related field</option>
+          <option value="Ph.D. in Computer Science or related field">Ph.D. in Computer Science or related field</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label id="salary" for="salary">Approx Annual Salary: </label>
+        <input type="number"  min="0" placeholder="Not required.">
+
+        <label id="technologies" for="technologies">What are your favorite technologies? </label>
+        <input type="textarea" placeholder="i.e. JavaScript, NodeJS, React, C#, Lisp, Python, Django, Go...">
+
+        <label id="coffee" for="coffee">How do you drink your coffee? Check all that apply!</label>
+        <label><input type="checkbox" name="coffee"> Black</label>
+        <label><input type="checkbox" name="coffee"> Cream</label>
+        <label><input type="checkbox" name="coffee"> Milk</label>
+        <label><input type="checkbox" name="coffee"> Coconut Milk</label>
+        <label><input type="checkbox" name="coffee"> Almond Milk</label>
+        <label><input type="checkbox" name="coffee"> Soy Milk</label>
+        <label><input type="checkbox" name="coffee"> Sugar</label>
+        <label><input type="checkbox" name="coffee"> Sugar substitute</label>
+        <label><input type="checkbox" name="coffee"> Flavors (i.e. Hazelnut, French Vanilla etc.)</label>
+
+
+
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+
+
+      <p>Thanks for submitting!</p>
     </main>
 
   </body>
