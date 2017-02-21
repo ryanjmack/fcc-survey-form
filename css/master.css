@@ -34,8 +34,16 @@ textarea {
   width: 100%;
 }
 
+[type="text"], [type="number"], [type="email"], select {
+  height: 30px;
+}
+
 .bold {
   font-weight: 500;
+}
+
+.buttons {
+  padding-left: 10px;
 }
 
 .buttons label {
@@ -43,12 +51,11 @@ textarea {
   margin-top: 5px;
 }
 
-.input, .radio-check-input {
+#first-form-element, .input, .radio-check-input {
   margin-top: 25px;
-  width: 100%;
 }
 
-.input > label, .input > input, .input > select, .radio-check-input > div {
+.input, .input label, .input input, .input select, .radio-check-input, .radio-check-input > div {
   width: 100%;
 }
 
@@ -69,6 +76,43 @@ textarea {
   font-weight: 600;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 500px) {}
 
+  .experience .buttons {
+    padding-left: 0;
+  }
+
+  .input {
+    max-width: 510px;
+  }
+
+  .radio-check-input {
+    display: flex;
+  }
+
+  .radio-check-input div {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  [for="background"], [for="exp"]{
+    position: relative;
+  }
+
+  [for="coffee"] {
+    width: 254px;
+  }
+
+  .experience {
+    max-width: 510px;
+  }
+
+  .experience div {
+    justify-content: flex-start;
+  }
 }
