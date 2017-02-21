@@ -4,6 +4,7 @@
 
 body {
   background-color: #FF9A1F;
+  font-family: "Ubuntu", sans-serif;
   line-height: 1.8;
   max-width: 100%;
 }
@@ -29,6 +30,10 @@ main p, #title {
 
 form div, main p, #title, .multiple-options, .multiple-options div, .single-option input, .single-option label, .single-option textarea, .single-option select {
   width: 100%;
+}
+
+.bold {
+  font-weight: 500;
 }
 
 .multiple-options, form div {
@@ -66,6 +71,7 @@ form div, main p, #title, .multiple-options, .multiple-options div, .single-opti
 
 #title {
   margin: 15px 0;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 700px) {
