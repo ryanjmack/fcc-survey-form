@@ -26,9 +26,11 @@ main {
 
 main p, #title {
   text-align: center;
+  margin: 0;
 }
 
-form div, main p, #title, .multiple-options, .multiple-options div, .single-option input, .single-option label, .single-option textarea, .single-option select {
+textarea {
+  height: 100px;
   width: 100%;
 }
 
@@ -36,25 +38,18 @@ form div, main p, #title, .multiple-options, .multiple-options div, .single-opti
   font-weight: 500;
 }
 
-.multiple-options, form div {
-  margin-top: 30px;
-}
-
-.multiple-options div, main p {
-  margin: 0;
-}
-
-.buttons, .single-option input, .single-option textarea {
-  margin-top: 10px;
-}
-
-.buttons label{
+.buttons label {
   display: block;
   margin-top: 5px;
 }
 
-.single-option textarea {
-  height: 75px;
+.input, .radio-check-input {
+  margin-top: 25px;
+  width: 100%;
+}
+
+.input > label, .input > input, .input > select, .radio-check-input > div {
+  width: 100%;
 }
 
 #submit {
@@ -70,10 +65,10 @@ form div, main p, #title, .multiple-options, .multiple-options div, .single-opti
 }
 
 #title {
-  margin: 15px 0;
+  margin: 15px;
   font-weight: 600;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 550px) {
 
 }

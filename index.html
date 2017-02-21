@@ -20,22 +20,22 @@
 
       <form id="survey-form" action="#" method="post">
 
-        <div class="single-option">
-          <label class="bold" for="age-input">* Age: </label>
-          <input type="number" id="age-input" min="14" max="110" required>
-        </div>
-
-        <div class="single-option">
+        <div class="input">
           <label class="bold" for="name-input">* Name: </label>
           <input type="text" id="name-input" placeholder="Please enter your name." required>
         </div>
 
-        <div class="single-option">
+        <div class="input">
+          <label class="bold" for="age-input">* Age: </label>
+          <input type="number" id="age-input" min="14" max="110" placeholder="Please enter your age." required>
+        </div>
+
+        <div class="input">
           <label class="bold" for="email-input">* Email: </label>
           <input type="email" id="email-input" placeholder="Please enter a valid email address." required>
         </div>
 
-        <div class="multiple-options">
+        <div class="radio-check-input">
           <div>
             <label class="bold" for="background">Background Experience: </label>
           </div>
@@ -45,7 +45,7 @@
           </div>
         </div>
 
-        <div class="multiple-options">
+        <div class="radio-check-input">
           <div>
             <label class="bold" id="years-of-experience">Years of Experience: </label>
           </div>
@@ -59,7 +59,7 @@
         </div>
 
 
-        <div class="single-option">
+        <div class="input">
           <label class="bold" for="education-dropdown">Highest Level of Education: </label>
           <select name="dropdown" id="education-dropdown">
             <option value="Self taught">Self taught</option>
@@ -73,17 +73,17 @@
           </select>
         </div>
 
-        <div class="single-option">
+        <div class="input">
           <label class="bold" for="salary-input">Approx Annual Salary: </label>
           <input type="number" id="salary-input" min="0" placeholder="Not required.">
         </div>
 
-        <div class="single-option">
+        <div class="input">
           <label  class="bold" for="technologies-textarea">What are your favorite technologies? </label>
           <textarea id="technologies-textarea" placeholder="i.e. JavaScript, NodeJS, React, C#, Lisp, Python, Django, Go..."></textarea>
         </div>
 
-        <div class="multiple-options">
+        <div class="radio-check-input">
           <div>
             <label class="bold" for="coffee">How do you drink your coffee? Check all that apply!</label>
           </div>
