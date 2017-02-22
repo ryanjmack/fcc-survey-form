@@ -25,8 +25,8 @@ main {
 }
 
 main p, #title {
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
 textarea {
@@ -59,6 +59,11 @@ textarea {
   width: 100%;
 }
 
+.radio-check-input {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #submit {
   background-color: #0079B2;
   border: none;
@@ -76,7 +81,7 @@ textarea {
   font-weight: 600;
 }
 
-@media screen and (min-width: 500px) {}
+@media screen and (min-width: 500px) {
 
   .experience .buttons {
     padding-left: 0;
@@ -87,7 +92,7 @@ textarea {
   }
 
   .radio-check-input {
-    display: flex;
+    flex-wrap: nowrap;
   }
 
   .radio-check-input div {
@@ -100,11 +105,7 @@ textarea {
     flex-direction: column;
   }
 
-  [for="background"], [for="exp"]{
-    position: relative;
-  }
-
-  [for="coffee"] {
+  .coffee {
     width: 254px;
   }
 
