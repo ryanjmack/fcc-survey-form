@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="description" content="Survey form for developers">
     <meta name="author" content="Ryan Mack">
@@ -9,101 +10,102 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/master.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
+<body>
     <h1 id="title">Developer Survey Form</h1>
 
     <main>
-      <p id="description">If you are a developer, we'd appreciate if you could fill out this survey!</p>
+        <p id="description">If you are a developer, we'd appreciate if you could fill out this survey!</p>
 
-      <form id="survey-form" action="#" method="post">
+        <form id="survey-form" action="#" method="post">
 
-        <div class="input" id="first-form-element">
-          <label class="bold">* Name: </label>
-          <input type="text" placeholder="Please enter your name." required>
-        </div>
+            <div class="input" id="first-form-element">
+                <label class="bold">* Name: </label>
+                <input type="text" placeholder="Please enter your name." required>
+            </div>
 
-        <div class="input">
-          <label class="bold">* Age: </label>
-          <input type="number" min="14" max="110" placeholder="Please enter your age." required>
-        </div>
+            <div class="input">
+                <label class="bold">* Age: </label>
+                <input type="number" min="14" max="110" placeholder="Please enter your age." required>
+            </div>
 
-        <div class="input">
-          <label class="bold">* Email: </label>
-          <input type="email" placeholder="Please enter a valid email address." required>
-        </div>
+            <div class="input">
+                <label class="bold">* Email: </label>
+                <input type="email" placeholder="Please enter a valid email address." required>
+            </div>
 
-        <div class="radio-check-input experience">
-          <div>
-            <label class="bold">Background Experience: </label>
-          </div>
-          <div class="buttons">
-            <label><input type="radio" name="background" checked="checked"> Hobbyist</label>
-            <label><input type="radio" name="background"> Professional</label>
-          </div>
-        </div>
+            <div class="radio-check-input experience">
+                <div>
+                    <label class="bold">Background Experience: </label>
+                </div>
+                <div class="buttons">
+                    <label><input type="radio" name="background" checked="checked"> Hobbyist</label>
+                    <label><input type="radio" name="background"> Professional</label>
+                </div>
+            </div>
 
-        <div class="radio-check-input experience">
-          <div>
-            <label class="bold">Years of Experience: </label>
-          </div>
-          <div class="buttons">
-            <label><input type="radio" name="exp" checked="checked"> Less than 1 year</label>
-            <label><input type="radio" name="exp"> 1-2 years</label>
-            <label><input type="radio" name="exp"> 2-5 years</label>
-            <label><input type="radio" name="exp"> 6-10 years</label>
-            <label><input type="radio" name="exp"> More than 11 years</label>
-          </div>
-        </div>
+            <div class="radio-check-input experience">
+                <div>
+                    <label class="bold">Years of Experience: </label>
+                </div>
+                <div class="buttons">
+                    <label><input type="radio" name="exp" checked="checked"> Less than 1 year</label>
+                    <label><input type="radio" name="exp"> 1-2 years</label>
+                    <label><input type="radio" name="exp"> 2-5 years</label>
+                    <label><input type="radio" name="exp"> 6-10 years</label>
+                    <label><input type="radio" name="exp"> More than 11 years</label>
+                </div>
+            </div>
 
 
-        <div class="input">
-          <label class="bold">Highest Level of Education: </label>
-          <select name="dropdown">
-            <option value="Self taught">Self taught</option>
-            <option value="Certificate">Certificate</option>
-            <option value="Bootcamp">Bootcamp</option>
-            <option value="Bachelors or Masters in other field">Bachelors or Masters in other field</option>
-            <option value="Bachelors or Masters in Computer Science, or similiar field">Bachelors or Masters in Computer Science</option>
-            <option value="Ph.D. in other field">Ph.D. in Computer Science or related field</option>
-            <option value="Ph.D. in Computer Science or related field">Ph.D. in Computer Science or related field</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
+            <div class="input">
+                <label class="bold">Highest Level of Education: </label>
+                <select name="dropdown">
+                    <option value="Self taught">Self taught</option>
+                    <option value="Certificate">Certificate</option>
+                    <option value="Bootcamp">Bootcamp</option>
+                    <option value="Bachelors or Masters in other field">Bachelors or Masters in other field</option>
+                    <option value="Bachelors or Masters in Computer Science, or similiar field">Bachelors or Masters in Computer Science</option>
+                    <option value="Ph.D. in other field">Ph.D. in Computer Science or related field</option>
+                    <option value="Ph.D. in Computer Science or related field">Ph.D. in Computer Science or related field</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
 
-        <div class="input">
-          <label class="bold">Approx Annual Salary: </label>
-          <input type="number" min="0" placeholder="Not required.">
-        </div>
+            <div class="input">
+                <label class="bold">Approx Annual Salary: </label>
+                <input type="number" min="0" placeholder="Not required.">
+            </div>
 
-        <div class="input">
-          <label  class="bold">What are your favorite technologies? </label>
-          <textarea placeholder="i.e. JavaScript, NodeJS, React, C#, Lisp, Python, Django, Go..."></textarea>
-        </div>
+            <div class="input">
+                <label class="bold">What are your favorite technologies? </label>
+                <textarea placeholder="i.e. JavaScript, NodeJS, React, C#, Lisp, Python, Django, Go..."></textarea>
+            </div>
 
-        <div class="radio-check-input">
-          <div>
-            <label class="bold coffee">How do you drink your coffee? Check all that apply!</label>
-          </div>
-          <div class="buttons">
-            <label><input type="checkbox" name="coffee"> Black</label>
-            <label><input type="checkbox" name="coffee"> Cream</label>
-            <label><input type="checkbox" name="coffee"> Milk</label>
-            <label><input type="checkbox" name="coffee"> Coconut Milk</label>
-            <label><input type="checkbox" name="coffee"> Almond Milk</label>
-            <label><input type="checkbox" name="coffee"> Soy Milk</label>
-            <label><input type="checkbox" name="coffee"> Sugar</label>
-            <label><input type="checkbox" name="coffee"> Sugar substitute</label>
-            <label><input type="checkbox" name="coffee"> Flavors (i.e. French Vanilla)</label>
-          </div>
-        </div>
+            <div class="radio-check-input">
+                <div>
+                    <label class="bold coffee">How do you drink your coffee? Check all that apply!</label>
+                </div>
+                <div class="buttons">
+                    <label><input type="checkbox" name="coffee"> Black</label>
+                    <label><input type="checkbox" name="coffee"> Cream</label>
+                    <label><input type="checkbox" name="coffee"> Milk</label>
+                    <label><input type="checkbox" name="coffee"> Coconut Milk</label>
+                    <label><input type="checkbox" name="coffee"> Almond Milk</label>
+                    <label><input type="checkbox" name="coffee"> Soy Milk</label>
+                    <label><input type="checkbox" name="coffee"> Sugar</label>
+                    <label><input type="checkbox" name="coffee"> Sugar substitute</label>
+                    <label><input type="checkbox" name="coffee"> Flavors (i.e. French Vanilla)</label>
+                </div>
+            </div>
 
-        <button id="submit" type="submit">Submit</button>
-      </form>
+            <button id="submit" type="submit">Submit</button>
+        </form>
 
-      <p>Thanks for submitting!</p>
+        <p>Thanks for submitting!</p>
     </main>
 
-  </body>
+</body>
+
 </html>
