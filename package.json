@@ -1,0 +1,24 @@
+{
+  "name": "survey-form",
+  "version": "1.0.0",
+  "description": "Mock survey for developers loosely based off of [Stack Overflow's Developer Survey](http://stackoverflow.com/research/developer-survey-2016)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanjmack/fcc-survey-form.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanjmack/fcc-survey-form/issues"
+  },
+  "homepage": "https://github.com/ryanjmack/fcc-survey-form#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.1"
+  }
+}
